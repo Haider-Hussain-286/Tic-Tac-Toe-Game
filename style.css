@@ -1,20 +1,71 @@
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #548687;
+    background-color: rgb(255, 255, 255);
+    background-image: url("tic-tac-toe.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
     text-align: center;
 }
 
 h1{
-   padding-top: 12px;
+   margin-top: 15px;
+   padding: 12px;
    font-weight: bold;
+   color: #ffffc4;
+   font-size: 2rem;
+}
+
+.home-screen{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9rem;
+    gap: 19px;
+}
+
+#play-btn{
+    padding: 1rem;
+    font-size: 1.55rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 2px solid #548687
+}
+
+#back-btn{
+   padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 2px solid #548687
+}
+
+
+#pvp{
+    padding: 1rem;
+    font-size: 1.55rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 2px solid #548687
 }
 
 .container{
-    height: 70vh;
+    height: 68vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,26 +97,425 @@ h1{
     font-size: 1.25rem;
     background-color: #191913;
     color: #fff;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid #548687
 }
 
 #new-btn{
-     padding: 1rem;
+    padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
     color: #fff;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid #548687
 }
 
 #msg{
-    color: #ffffc5;
-    font-size: 5vmin;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vmin;
+    padding: 1.5rem;
+  
 }
 
 .msg-container{
-    height: 20vmin;
+    height: 20vmin;  
 }
 
 .hide{
     display: none ;
+}
+
+@media screen and (max-width:450px) {
+   
+    html, body {
+      height: 100%; 
+      width: 100%;
+      margin: 0; 
+      padding: 0; 
+    }
+
+    *{
+      margin: 0; 
+      padding: 0; 
+    }
+
+
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: url("tic-tac-toe.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 15px;
+        padding: 12px;
+        font-weight: bold;
+        color: #ffffc4;
+        font-size: 1.5rem;
+    }
+
+    .home-screen{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 9rem;
+        gap: 15px;
+    }
+
+    #play-btn{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #back-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+
+    #pvp{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    .container{
+       height: 68vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .game{
+       height: 60vmin;
+       width: 60vmin;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 1.5vmin;
+    }//here
+
+    .box{
+       height: 19vmin;
+       width: 19vmin;
+       border-radius: 1rem;
+       border: none;
+       box-shadow: 0 0 1rem rgba(0,0,0, 0.3);  
+       font-size: 8vmin;
+       color: #b0413e;
+       background-color: #ffffc4;
+    }
+
+    #reset-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #new-btn{
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #191913;
+      color: #fff;
+      border-radius: 1.5rem;
+      border: 2px solid #548687
+    }
+
+    #msg{
+      color: #fff;
+      font-weight: bold;
+      font-size: 4.2vmin;
+      padding: 1.5rem; 
+    }
+
+    .msg-container{
+      height: 20vmin;  
+    }
+ 
+    .hide{
+      display: none ;
+    }
+
+}
+
+@media screen and (min-width:451px) and (max-width:750px) {
+   
+    html, body {
+      height: 100%; 
+      width: 100%;
+      margin: 0; 
+      padding: 0; 
+    }
+
+    *{
+      margin: 0; 
+      padding: 0; 
+    }
+
+
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: url("tic-tac-toe.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 15px;
+        padding: 12px;
+        font-weight: bold;
+        color: #ffffc4;
+        font-size: 1.7rem;
+    }
+
+    .home-screen{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 9rem;
+        gap: 15px;
+    }
+
+    #play-btn{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #back-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+
+    #pvp{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    .container{
+       height: 68vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .game{
+       height: 60vmin;
+       width: 60vmin;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 1.5vmin;
+    }
+
+    .box{
+       height: 19vmin;
+       width: 19vmin;
+       border-radius: 1rem;
+       border: none;
+       box-shadow: 0 0 1rem rgba(0,0,0, 0.3);  
+       font-size: 8vmin;
+       color: #b0413e;
+       background-color: #ffffc4;
+    }
+
+    #reset-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #new-btn{
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #191913;
+      color: #fff;
+      border-radius: 1.5rem;
+      border: 2px solid #548687
+    }
+
+    #msg{
+      color: #fff;
+      font-weight: bold;
+      font-size: 4.2vmin;
+      padding: 1rem; 
+    }
+
+    .msg-container{
+      height: 20vmin;  
+    }
+ 
+    .hide{
+      display: none ;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:900px) {
+   
+    html, body {
+      height: 100%; 
+      width: 100%;
+      margin: 0; 
+      padding: 0; 
+    }
+
+    *{
+      margin: 0; 
+      padding: 0; 
+    }
+
+
+    body{
+        background-color: rgb(255, 255, 255);
+        background-image: url("tic-tac-toe.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 15px;
+        padding: 12px;
+        font-weight: bold;
+        color: #ffffc4;
+        font-size: 2rem;
+    }
+
+    .home-screen{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 9rem;
+        gap: 15px;
+    }
+
+    #play-btn{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #back-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+
+    #pvp{
+       padding: 1rem;
+       font-size: 1.22rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    .container{
+       height: 68vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .game{
+       height: 60vmin;
+       width: 60vmin;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 1.5vmin;
+    }
+
+    .box{
+       height: 19vmin;
+       width: 19vmin;
+       border-radius: 1rem;
+       border: none;
+       box-shadow: 0 0 1rem rgba(0,0,0, 0.3);  
+       font-size: 8vmin;
+       color: #b0413e;
+       background-color: #ffffc4;
+    }
+
+    #reset-btn{
+       padding: 1rem;
+       font-size: 1rem;
+       background-color: #191913;
+       color: #fff;
+       border-radius: 1.5rem;
+       border: 2px solid #548687
+    }
+
+    #new-btn{
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #191913;
+      color: #fff;
+      border-radius: 1.5rem;
+      border: 2px solid #548687
+    }
+
+    #msg{
+      color: #fff;
+      font-weight: bold;
+      font-size: 4.2vmin;
+      padding: 1rem; 
+    }
+
+    .msg-container{
+      height: 20vmin;  
+    }
+ 
+    .hide{
+      display: none ;
+    }
 }
